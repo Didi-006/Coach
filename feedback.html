@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback | Rolls-Royce</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">COACH</div>
+           <ul class="nav-links">
+        <li><a href="index.html">Bags</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="perfumes.html">Perfumes</a></li>
+        <li><a href="fashion.html">Fashion</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+</body>
+
+<section class="luxury-feature reveal-on-scroll">
+    <h1>Your Thoughts on Our Feedback</h1>
+</section>
+
+
+  <section class="feedback-section">
+    <form class="feedback-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Confirmation message -->
+    <div id="confirmation-message" class="hidden-message">
+      ✅ Thank you! We'll review your feedback shortly.
+    </div>
+  </section>
+  <script>
+    // Scroll-based reveal animation
+    const reveals = document.querySelectorAll(".reveal-on-scroll");
+  
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+  
+      reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < triggerBottom) {
+          el.classList.add("revealed");
+        }
+      });
+    };
+  
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll); // Trigger on page load too
+  </script>
+
+  <footer class="footer">
+    <div class="container footer-flex">
+      © 2026 COACH. All rights reserved.
+      <div class="social-links">
+        <a href="https://www.facebook.com/RollsRoyceMotorCars/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/rollsroycecars"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/rollsroycecars/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/user/RollsRoyceMotorCars"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.feedback-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('confirmation-message').style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+</html>

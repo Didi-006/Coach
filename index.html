@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>COACH | Bags & Perfumes</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">COACH</div>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Bags</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="perfumes.html">Perfumes</a></li>
+        <li><a href="fashion.html">Fashion</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-text">
+      <h1>Luxury in Style</h1>
+      <p>Elegant bags and timeless fragrances</p>
+    </div>
+  </header>
+
+  <!-- Showcase Section -->
+  <section class="showcase">
+    <div class="image-container">
+      <img src="OIP.webp" alt="Coach Bag Showcase" />
+      <div class="image-caption">
+        <h2>Signature Elegance</h2>
+        <p>Discover premium craftsmanship and iconic fashion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Slider Section -->
+  <section class="model-slider-section">
+    <h2 class="section-title">Featured Collection</h2>
+
+    <div class="slider-container">
+      <div class="slider">
+
+        <div class="slide">
+          <img src="OIP (1).webp" alt="Coach Bag">
+          <div class="caption">Classic Leather Bag</div>
+        </div>
+
+        <div class="slide">
+          <img src="OIP (2).webp" alt="Coach Perfume">
+          <div class="caption">Coach Floral Perfume</div>
+        </div>
+
+        <div class="slide">
+          <img src="OIP (3).webp" alt="Luxury Handbag">
+          <div class="caption">Luxury Handbag</div>
+        </div>
+
+        <div class="slide">
+          <img src="OIP (4).webp" alt="Coach Collection">
+          <div class="caption">Modern Collection</div>
+        </div>
+
+        <div class="slide">
+          <img src="OIP (5).webp" alt="Designer Perfume">
+          <div class="caption">Signature Fragrance</div>
+        </div>
+
+        <div class="slide">
+          <img src="OIP (6).webp" alt="Coach Fashion">
+          <div class="caption">Fashion Essentials</div>
+        </div>
+
+        <div class="slide">
+          <img src="OIP (7).webp" alt="Coach Luxury">
+          <div class="caption">Luxury Lifestyle</div>
+        </div>
+
+        <div class="slide">
+          <img src="OIP (8).webp" alt="Coach Accessories">
+          <div class="caption">Premium Accessories</div>
+        </div>
+
+        <div class="slide">
+          <img src="th (1).webp" alt="Coach Bag">
+          <div class="caption">Elegant Tote Bag</div>
+        </div>
+
+        <div class="slide">
+          <img src="th (2).webp" alt="Coach Perfume">
+          <div class="caption">Fresh Perfume Line</div>
+        </div>
+
+        <div class="slide">
+          <img src="th (3).webp" alt="Coach Collection">
+          <div class="caption">Exclusive Collection</div>
+        </div>
+
+        <div class="slide">
+          <img src="th (4).webp" alt="Coach Product">
+          <div class="caption">Premium Design</div>
+        </div>
+
+        <div class="slide">
+          <img src="th (5).webp" alt="Coach Style">
+          <div class="caption">Timeless Style</div>
+        </div>
+
+        <div class="slide">
+          <img src="th.webp" alt="Coach Fashion">
+          <div class="caption">Everyday Luxury</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Feature -->
+  <section class="luxury-feature reveal-on-scroll">
+    <h2>Crafted for Modern Luxury</h2>
+    <p>
+      Every COACH bag and fragrance is designed with attention to detail,
+      combining modern style with timeless sophistication.
+    </p>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Luxury Feature -->
+  <section class="luxury-feature reveal-on-scroll">
+    <h2>Luxury That Defines You</h2>
+    <p>
+      From iconic handbags to unforgettable perfumes,
+      express your personality with confidence and elegance.
+    </p>
+  </section>
+
+  <!-- Glass Section -->
+  <section class="glass-section">
+
+    <div class="glass-card">
+      <h3>Our Heritage</h3>
+      <p>
+        COACH has become a symbol of refined fashion,
+        blending craftsmanship, innovation, and luxury.
+      </p>
+    </div>
+
+    <div class="glass-card">
+      <h3>Our Vision</h3>
+      <p>
+        To inspire confidence and individuality through
+        premium bags, fragrances, and fashion accessories.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Scroll Reveal Script -->
+  <script>
+    // Scroll-based reveal animation
+    const reveals = document.querySelectorAll(".reveal-on-scroll");
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < triggerBottom) {
+          el.classList.add("revealed");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-flex">
+
+      <p>&copy; 2026 COACH. All rights reserved.</p>
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/coach/" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://x.com/coach" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://www.instagram.com/coach/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.youtube.com/user/Coach" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+</body>
+</html>
