@@ -3,12 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* =========================
-   GLOBAL STYLES
-========================= */
-/* =========================
-   GENERAL STYLING
-========================= */
 
 *{
   margin:0;
@@ -23,9 +17,7 @@ body{
   overflow-x:hidden;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+
 
 .navbar{
   display:flex;
@@ -327,9 +319,6 @@ body{
   transform:scale(1.2);
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media(max-width:900px){
 
@@ -405,9 +394,7 @@ body{
   overflow-x:hidden;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+
 
 .hero{
   min-height:100vh;
@@ -418,7 +405,7 @@ body{
   background-position:center;
 }
 
-/* NAVBAR */
+
 
 .navbar{
   width:100%;
@@ -537,9 +524,7 @@ body{
   box-shadow:0 20px 50px rgba(0,0,0,0.6);
 }
 
-/* =========================
-   FEATURE BOXES
-========================= */
+
 
 .feature-section{
   display:grid;
@@ -579,9 +564,6 @@ body{
   color:#ccc;
 }
 
-/* =========================
-   COLLECTION SECTION
-========================= */
 
 .collection-section{
   padding:120px 8%;
@@ -647,9 +629,7 @@ body{
   color:#ddd;
 }
 
-/* =========================
-   BANNER
-========================= */
+
 
 .luxury-banner{
   height:500px;
@@ -686,9 +666,7 @@ body{
   color:#ddd;
 }
 
-/* =========================
-   SHOWCASE SECTION
-========================= */
+
 
 .showcase-section{
   display:flex;
@@ -735,9 +713,6 @@ body{
   font-weight:bold;
 }
 
-/* =========================
-   GALLERY
-========================= */
 
 .gallery-section{
   display:grid;
@@ -762,9 +737,7 @@ body{
   transform:scale(1.08);
 }
 
-/* =========================
-   FOOTER
-========================= */
+
 
 .footer{
   background:black;
@@ -805,9 +778,7 @@ body{
   transform:translateY(-5px);
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media(max-width:992px){
 
@@ -866,9 +837,7 @@ body {
   z-index: 100;
   backdrop-filter: blur(10px);
 }
-/* =========================
-   GLOBAL STYLES
-========================= */
+
 
 *{
   margin: 0;
@@ -883,9 +852,7 @@ body{
   overflow-x: hidden;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+
 
 .hero-header{
   min-height: 100vh;
@@ -950,9 +917,7 @@ body{
   color: #d4af37;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+
 
 .hero-content{
   display: flex;
